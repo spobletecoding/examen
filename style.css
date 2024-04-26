@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #119b9d;
+    width: 100%;
+    min-height: 200px;
+    max-height: auto;
+    border: 4px solid black;
+}
+
+.up {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 5px;
+}
+
+.down {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    width: 49%;
+    min-height: auto;
+    max-height: auto;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 49%;
+    min-height: auto;
+    max-height: auto;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50%;
+    max-height: auto;
+    width: 100%;
+    list-style: none;
+    font-size: 25px;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-donate {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #900ff6;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-friend {
+    min-height: 40px;
+    max-width: auto;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #900ff6;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.pet-select {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pata {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.ubication {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubi {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.friend {
+    display: flex;
+    flex-flow: row wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.near p {
+    color: white;
+}
+
+.looking p {
+    color: white;
+}
+
+.containers {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    width: 90%;
+    max-width: auto;
+    min-height: 180px;
+    padding: 10px;
+}
+
+#images {
+    min-width: 150px;
+    max-width: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#parrafo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 650px;
+    min-height: 30%;
+    max-height: auto;
+}
+
+#last {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    min-width: 150px;
+    max-width: auto;
+    min-height: 100px;
+    max-height: auto;
+}
+
+#btn-pets {
+    min-height: 40px;
+    min-width: 150px;
+    max-width: auto;
+    background-color: #15cfd1;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+}

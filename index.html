@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/paw-light.png">
+    <title>Refugio para Mascotas</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="up" id="up">
+            <div class="logo" id="logo">
+                <img src="img/paw-light.png" alt="">
+                <h1>Pet Shelter</h1>
+            </div>
+            <div class="menu" id="menu">
+                <ul id="menu-list">
+                    <li class="find" id="find">
+                        <a href="">Find a Pet</a>
+                    </li>
+                    <li class="about" id="about">
+                        <a href="">About</a>
+                    </li>
+                    <button class="btn-donate" onclick="desaparecerBoton(this)" id="btn-donate">
+                        Donate
+                    </button>
+                </ul>
+            </div>
+        </div>
+        <div class="down" id="down">
+            <div class="pet-select" id="pet-select">
+                <div class="looking" id="looking">
+                    <p>I'm looking for a...</p>
+                </div>
+                <div class="pata" id="pata">
+                    <img src="img/paw-light.png" alt="">
+                    <select onchange="mostrarAlerta()" name="" id="petSelect">
+                        <option value="any">Any Pet</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ubication" id="ubication">
+                <div class="near" id="near">
+                    <p>In or near...</p>
+                </div>
+                <div class="ubi" id="ubi">
+                    <img src="img/pin-light.png" alt="">
+                    <input type="text" placeholder="City or Zip Code">
+                </div>
+            </div>
+            <div class="friend" id="friend">
+                <button class="btn-friend" id="btn-friend"> Find your new best friend</button>
+            </div>
+        </div>
+    </nav>
+    <div class="containers" id="containers">
+        <div class="pepper" id="container">
+            <div class="img-pepper" id="images">
+                <img src="img/pepper.jpg" alt="">
+            </div>
+            <div class="parrafo-pepper" id="parrafo">
+                <h1>Pepper</h1>
+                <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+            </div>
+            <div class="last-pepper" id="last">
+                <p id="pepper-petting">0 petting(s)</p>
+                <button class="btn-pepper" id="btn-pets" onclick="aumentarPetting('pepper-petting')">Pet Pepper</button>
+            </div>
+        </div>
+        <div class="bruce" id="container">
+            <div class="img-bruce" id="images">
+                <img src="img/bruce.jpg" alt="">
+            </div>
+            <div class="parrafo-bruce" id="parrafo">
+                <h1>Bruce</h1>
+                <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+            </div>
+            <div class="last-bruce" id="last">
+                <p id="bruce-petting">0 petting(s)</p>
+                <button class="btn-bruce" id="btn-pets" onclick="aumentarPetting('bruce-petting')">Pet Bruce</button>
+            </div>
+        </div>
+        <div class="oscar" id="container">
+            <div class="img-oscar" id="images">
+                <img src="img/oscar.jpg" alt="">
+            </div>
+            <div class="parrafo-oscar" id="parrafo">
+                <h1>Oscar</h1>
+                <p>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+            </div>
+            <div class="last-oscar" id="last">
+                <p id="oscar-petting">0 petting(s)</p>
+                <button class="btn-oscar" id="btn-pets" onclick="aumentarPetting('oscar-petting')">Pet Oscar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
