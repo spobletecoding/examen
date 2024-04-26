@@ -25,7 +25,6 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    max-height: auto;
     margin-left: 40px;
     margin-right: 40px;
     gap: 5px;
@@ -43,7 +42,7 @@ nav {
 .logo {
     display: flex;
     flex-flow: row wrap;
-    width: 50%;
+    width: 49%;
     min-height: auto;
     max-height: auto;
     align-items: center;
@@ -221,5 +220,7 @@ li:hover {
 }
 
 @media only screen and (max-width: 674px) {
-    nav {}
+    .logo {
+        width: 50%;
+    }
 }
